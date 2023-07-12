@@ -1,12 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import { BannerComponent } from '@sky-devs/common-ui';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [],
-      declarations: [AppComponent, NxWelcomeComponent],
+      declarations: [AppComponent, NxWelcomeComponent, BannerComponent],
     }).compileComponents();
   });
 
@@ -15,7 +16,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Welcome admin'
+      'Welcome to our admin app'
     );
   });
 
