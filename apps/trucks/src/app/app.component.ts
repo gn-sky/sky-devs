@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { trucks } from '@sky-devs/trucks-feature';
 
 @Component({
   selector: 'sky-devs-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'trucks';
+  truckList = trucks();
 }
