@@ -1,31 +1,31 @@
 {
-  "name": "trucks-feature",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/trucks-feature/src",
+  "name": "trucks-feature-trucks",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/trucks/feature-trucks/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/trucks-feature",
-        "main": "libs/trucks-feature/src/index.ts",
-        "tsConfig": "libs/trucks-feature/tsconfig.lib.json",
-        "assets": ["libs/trucks-feature/*.md"]
+        "outputPath": "dist/libs/trucks/feature-trucks",
+        "main": "libs/trucks/feature-trucks/src/index.ts",
+        "tsConfig": "libs/trucks/feature-trucks/tsconfig.lib.json",
+        "assets": ["libs/trucks/feature-trucks/*.md"]
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/trucks-feature/**/*.ts"]
+        "lintFilePatterns": ["libs/trucks/feature-trucks/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/trucks-feature/jest.config.ts",
+        "jestConfig": "libs/trucks/feature-trucks/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

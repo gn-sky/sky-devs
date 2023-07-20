@@ -4,14 +4,14 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { NxWelcomeComponent } from './nx-welcome.component';
-import { CommonUiModule } from '@sky-devs/common-ui';
+import { SharedCommonUiModule } from '@sky-devs/shared/common-ui';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
-    CommonUiModule,
-    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),    
+    SharedCommonUiModule,
+    RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
   ],
   providers: [],
   bootstrap: [AppComponent],

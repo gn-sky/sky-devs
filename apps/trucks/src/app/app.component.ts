@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { trucks } from '@sky-devs/trucks-feature';
+import { trucks } from '@sky-devs/trucks/feature-trucks';
 
 @Component({
   selector: 'sky-devs-root',

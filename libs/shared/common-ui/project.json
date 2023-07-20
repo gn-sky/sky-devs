@@ -1,7 +1,7 @@
 {
-  "name": "common-ui",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/common-ui/src",
+  "name": "shared-common-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/common-ui/src",
   "prefix": "sky-devs",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/common-ui/jest.config.ts",
+        "jestConfig": "libs/shared/common-ui/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/common-ui/**/*.ts",
-          "libs/common-ui/**/*.html"
+          "libs/shared/common-ui/**/*.ts",
+          "libs/shared/common-ui/**/*.html"
         ]
       }
     }

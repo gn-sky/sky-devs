@@ -15,8 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sky-devs/common-ui": ["libs/common-ui/src/index.ts"],
-      "@sky-devs/trucks-feature": ["libs/trucks-feature/src/index.ts"]
+      "@sky-devs/shared/common-ui": ["libs/shared/common-ui/src/index.ts"],
+      "@sky-devs/trucks/feature-trucks": [
+        "libs/trucks/feature-trucks/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

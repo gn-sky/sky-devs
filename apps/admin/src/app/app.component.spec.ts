@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
-import { BannerComponent } from '@sky-devs/common-ui';
+import { BannerComponent } from '@sky-devs/shared/common-ui';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
