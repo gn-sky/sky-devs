@@ -1,7 +1,7 @@
 export interface Truck {
-  id: number,
-  number: number,
-  state: string
+  id: number;
+  number: number;
+  state: string;
 }
 
 export const trucks = (): Truck[] => {
@@ -9,12 +9,12 @@ export const trucks = (): Truck[] => {
     {
       id: 1,
       number: 1,
-      state: 'IL'
+      state: 'IL',
     },
     {
       id: 2,
       number: 2,
-      state: 'TX'
-    }    
-  ]
-}
+      state: 'TX',
+    },
+  ];
+};
