@@ -2,12 +2,12 @@ import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterTestingModule } from '@angular/router/testing';
-import { CommonUiModule } from '@sky-devs/common-ui';
+import { SharedCommonUiModule } from '@sky-devs/shared/common-ui';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, CommonUiModule],
+      imports: [RouterTestingModule, SharedCommonUiModule],
       declarations: [AppComponent, NxWelcomeComponent],
     }).compileComponents();
   });

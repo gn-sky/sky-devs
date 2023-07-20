@@ -7,4 +7,4 @@ import { BannerComponent } from './banner/banner.component';
   declarations: [BannerComponent],
   exports: [BannerComponent],
 })
-export class CommonUiModule {}
+export class SharedCommonUiModule {}
