@@ -4,7 +4,7 @@
   "projectType": "application",
   "prefix": "sky-devs",
   "sourceRoot": "apps/trucks/src",
-  "tags": [],
+  "tags": ["scope:trucks", "type:app"],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
